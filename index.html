@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f47735">
+  <meta name="description" content="Find cozy stays and budget-friendly hotels around Tunasan, Muntinlupa.">
+  <title>Stayora — Find Your Kind of Stay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Stayora home"><span class="brand-mark">s</span> stayora<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#stays">Find a stay</a>
+      <a href="#why-us">Why Stayora</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#stays">Explore stays <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT LITTLE ESCAPE</p>
+        <h1>A good stay<br>changes <em>everything.</em></h1>
+        <p class="hero-text">Discover cozy rooms, easy check-ins, and stays that fit your plans — all around your neighborhood.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#stays">Explore places <span>→</span></a>
+          <a class="text-link" href="#how-it-works">How it works <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="mini-avatars">●●●</span><span>Local stays, easier to compare</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a cozy hotel room">
+        <div class="sun-shape"></div>
+        <div class="hero-photo">
+          <div class="room-window"><span></span><span></span><span></span><span></span></div>
+          <div class="room-wall-art">take<br>it slow.</div>
+          <div class="bed">
+            <div class="headboard"></div><div class="pillow pillow-one"></div><div class="pillow pillow-two"></div><div class="blanket"></div>
+          </div>
+          <div class="bedside"><div class="lamp"></div><div class="table"></div></div>
+          <div class="plant"><i></i><i></i><i></i><b></b></div>
+        </div>
+        <div class="floating-tag"><span class="tag-icon">✦</span><span><b>Stay a little longer</b><small>Find your happy place</small></span></div>
+        <div class="hero-sticker">GOOD<br>VIBES<br>ONLY <span>✳</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / FIND YOUR STAY</span><span>COMFY • CONVENIENT • LOCAL</span></div>
+    </section>
+
+    <section class="search-panel" aria-label="Search stays">
+      <div class="search-intro"><span class="search-icon">⌕</span><div><b>Find your kind of stay</b><small>Start with what matters to you</small></div></div>
+      <label class="search-field"><span>AREA</span><select id="areaFilter"><option value="all">Near Tunasan, Muntinlupa</option><option value="tunasan">Tunasan</option><option value="alabang">Alabang</option><option value="budget">Budget-friendly</option></select></label>
+      <label class="search-field"><span>MAX. BUDGET / NIGHT</span><select id="budgetFilter"><option value="any">Any budget</option><option value="1500">Up to ₱1,500</option><option value="2500">Up to ₱2,500</option><option value="4000">Up to ₱4,000</option></select></label>
+      <button class="button button-primary search-button" id="searchButton">Find stays <span>→</span></button>
+    </section>
+
+    <section class="stays-section section-wrap" id="stays">
+      <div class="section-heading">
+        <div><p class="eyebrow">AROUND YOU</p><h2>Places worth <em>staying.</em></h2><p class="section-subtitle">A handpicked-style demo of stays around Tunasan and nearby Muntinlupa.</p></div>
+        <a class="text-link desktop-link" href="#contact">Have a place to list? <span>↗</span></a>
+      </div>
+      <div class="filter-chips" aria-label="Quick filters">
+        <button class="chip active" data-quick="all">All stays</button>
+        <button class="chip" data-quick="budget">Budget finds</button>
+        <button class="chip" data-quick="tunasan">In Tunasan</button>
+        <button class="chip" data-quick="alabang">Near Alabang</button>
+      </div>
+      <div class="stays-grid" id="staysGrid">
+        <article class="stay-card" data-area="tunasan" data-price="901" data-name="The Palines Apartment Hotel">
+          <div class="stay-image image-palines"><span class="stay-badge">BUDGET FIND</span><span class="image-spark">✳</span><div class="image-caption">A little room to unwind</div></div>
+          <div class="stay-details"><div class="stay-topline"><span class="stay-type">APARTMENT HOTEL</span><span class="stay-rating">★ 8.6 <small>(Traveloka)</small></span></div><h3>The Palines Apartment Hotel</h3><p class="stay-location">⌖ Tunasan, Muntinlupa · near Evia</p><div class="stay-bottom"><div><strong>₱900<span>/night*</span></strong><small>Indicative starting rate</small></div><a class="round-link" href="https://www.traveloka.com/en-ph/hotel/philippines/area/tunasan-10007995" target="_blank" rel="noopener" aria-label="Check The Palines Apartment Hotel">↗</a></div></div>
+        </article>
+        <article class="stay-card" data-area="tunasan" data-price="1200" data-name="Ranchotel Tunasan">
+          <div class="stay-image image-ranchotel"><span class="stay-badge">QUICK GETAWAY</span><span class="image-spark">✳</span><div class="image-caption">Simple. Easy. Convenient.</div></div>
+          <div class="stay-details"><div class="stay-topline"><span class="stay-type">BUDGET HOTEL</span><span class="stay-rating">★ 3.4 <small>(Google)</small></span></div><h3>Ranchotel Tunasan</h3><p class="stay-location">⌖ National Highway, Tunasan</p><div class="stay-bottom"><div><strong>₱1,000<span>/night*</span></strong><small>Indicative starting rate</small></div><a class="round-link" href="https://www.google.com/search?q=Ranchotel+Tunasan+Muntinlupa" target="_blank" rel="noopener" aria-label="Check Ranchotel Tunasan">↗</a></div></div>
+        </article>
+        <article class="stay-card" data-area="alabang" data-price="2075" data-name="Hop Inn Hotel Alabang Manila">
+          <div class="stay-image image-hopinn"><span class="stay-badge">CITY COMFORT</span><span class="image-spark">✳</span><div class="image-caption">Your city-side reset</div></div>
+          <div class="stay-details"><div class="stay-topline"><span class="stay-type">CITY HOTEL</span><span class="stay-rating">★ 8.5 <small>(Traveloka)</small></span></div><h3>Hop Inn Hotel Alabang Manila</h3><p class="stay-location">⌖ Alabang, Muntinlupa</p><div class="stay-bottom"><div><strong>₱2,100<span>/night*</span></strong><small>Indicative starting rate</small></div><a class="round-link" href="https://www.traveloka.com/en-ph/hotel/philippines/landmark/tunasan-muntinlupa-city-91753490762484" target="_blank" rel="noopener" aria-label="Check Hop Inn Hotel Alabang">↗</a></div></div>
+        </article>
+        <article class="stay-card" data-area="alabang" data-price="3290" data-name="Quest Plus Conference Center Manila">
+          <div class="stay-image image-quest"><span class="stay-badge">SPECIAL OCCASIONS</span><span class="image-spark">✳</span><div class="image-caption">Make room for a treat</div></div>
+          <div class="stay-details"><div class="stay-topline"><span class="stay-type">UPSCALE HOTEL</span><span class="stay-rating">★ 8.4 <small>(Traveloka)</small></span></div><h3>Quest Plus Conference Center</h3><p class="stay-location">⌖ Alabang, Muntinlupa</p><div class="stay-bottom"><div><strong>₱3,300<span>/night*</span></strong><small>Indicative starting rate</small></div><a class="round-link" href="https://www.traveloka.com/en-ph/hotel/philippines/landmark/tunasan-muntinlupa-city-91753490762484" target="_blank" rel="noopener" aria-label="Check Quest Plus Conference Center">↗</a></div></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No stays match those filters. Try a higher budget or another area.</p>
+      <p class="rate-note">*Rates are illustrative starting estimates based on publicly listed search results, not live quotes. Prices, availability, ratings, and promotions may change. Confirm directly with the property or booking platform before paying.</p>
+    </section>
+
+    <section class="offer-section" id="why-us">
+      <div class="offer-illustration"><div class="offer-sun"></div><div class="offer-card"><span class="offer-star">✳</span><small>A LITTLE SOMETHING EXTRA</small><strong>Make your<br>stay <em>more.</em></strong><span class="offer-line"></span><p>Ask the property about weekday deals, extended-stay rates, or direct-booking offers.</p><span class="offer-stamp">SAVE<br>MORE!</span></div></div>
+      <div class="offer-copy"><p class="eyebrow">GOOD STAYS, BETTER VALUE</p><h2>A little discount<br>goes a <em>long way.</em></h2><p>Some properties offer lower rates on quieter days or longer stays. Ask about current promos when you contact them — discounts are subject to each property's terms and availability.</p><a class="button button-dark" href="#stays">Find your next stay <span>→</span></a><div class="offer-footnote">No made-up promo codes. Just better questions to ask.</div></div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-it-works">
+      <div class="section-heading"><div><p class="eyebrow">EASY AS 1, 2, STAY</p><h2>Booking made <em>simple.</em></h2></div></div>
+      <div class="steps-grid"><div class="step"><span class="step-number">01</span><span class="step-icon">⌕</span><h3>Choose your area</h3><p>Filter stays by location and nightly budget.</p></div><div class="step"><span class="step-number">02</span><span class="step-icon">↗</span><h3>Compare the details</h3><p>Open a listing to confirm rates, amenities, and availability.</p></div><div class="step"><span class="step-number">03</span><span class="step-icon">♡</span><h3>Ask about a deal</h3><p>Contact the property and check for current discounts.</p></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">LET'S MAKE IT A STAY</p><h2>Got questions?<br><em>We're all ears.</em></h2><p>This demo directory helps you discover places nearby. Contact each property directly for bookings and current prices.</p></div>
+      <div class="contact-card"><span class="contact-icon">✉</span><h3>Need help choosing?</h3><p>Start with the listing that fits your budget, then confirm details with the property.</p><a href="https://www.google.com/maps/search/hotels+near+Tunasan,+Muntinlupa/" target="_blank" rel="noopener" class="contact-link">See stays on Google Maps <span>↗</span></a><div class="contact-divider"></div><small>For listing corrections or partnership inquiries</small><a href="mailto:hello@stayora.example" class="contact-email">hello@stayora.example</a><small class="demo-note">Demo email — replace with your real contact before publishing.</small></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#"><span class="brand-mark">s</span> stayora<span class="brand-dot">.</span></a><span>Made for your next little escape.</span><span>© <span id="year"></span> Stayora · Demo concept</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
